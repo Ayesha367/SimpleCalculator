@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('https://t4.ftcdn.net/jpg/02/98/21/05/360_F_298210512_NROqapr2S6yJ9T4jxB3uTkuQhyr2BfFP.jpg'); /* Adjust the path to your image */
+  background-size: cover; /* Cover the entire page */
+  background-repeat: no-repeat; /* Prevent repeating the image */
+  background-position: center; /* Center the image */
+  color: #FFD700; /* Set text color for overall contrast */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent dark background */
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  color: #FFD700; /* Gold/yellow text */
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.display input {
+  font-size: 24px;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #333; /* Dark input background */
+  color: #FFD700; /* Yellow text */
+  border: none;
+  border-radius: 4px;
+  text-align: right;
+}
+
+.result {
+  font-size: 20px;
+  color: #FFD700; /* Yellow result text */
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  font-size: 20px;
+  padding: 10px;
+  background-color: #444; /* Dark button background */
+  color: #FFD700; /* Yellow text */
+  border: 1px solid #FFD700; /* Yellow border */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.buttons button:hover {
+  background-color: #FFD700; /* Yellow background on hover */
+  color: #222; /* Dark text on hover */
+}
